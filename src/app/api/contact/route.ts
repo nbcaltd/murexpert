@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
-const DISCORD_WEBHOOK_URL =
-  "process.env.DISCORD_WEBHOOK_URL";
+const DISCORD_WEBHOOK_URL = process.env.DISCORD_WEBHOOK_URL || "";
 
 const NOTIFY_EMAIL = "contact@murexpert.fr";
 
