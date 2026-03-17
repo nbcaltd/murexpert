@@ -1,0 +1,62 @@
+name: Publish SEO pages
+on:
+  schedule:
+    # Every day at 8:00 UTC
+    - cron: '0 8 * * *'
+  workflow_dispatch: # Allow manual trigger
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Generate SEO pages due today
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: npx tsx scripts/generate-seo-pages.ts
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet && echo "changed=false" >> $GITHUB_OUTPUT || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: List new pages
+        if: steps.changes.outputs.changed == 'true'
+        id: pages
+        run: |
+          NEW_FILES=$(git diff --name-only --diff-filter=A -- 'src/data/seo-pages/content/*.json' | sed 's|src/data/seo-pages/content/||;s|\.json||')
+          echo "files<<EOF" >> $GITHUB_OUTPUT
+          echo "$NEW_FILES" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+          echo "count=$(echo "$NEW_FILES" | grep -c .)" >> $GITHUB_OUTPUT
+
+      - name: Commit and push
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/data/seo-pages/content/
+          git commit -m "chore(seo): publish pages $(date +%Y-%m-%d)"
+          git push
+
+      - name: Notify Discord
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          PAGES="${{ steps.pages.outputs.files }}"
+          COUNT="${{ steps.pages.outputs.count }}"
+          LINKS=""
+          while IFS= read -r slug; do
+            [ -z "$slug" ] && continue
+            LINKS="$LINKS\n• [/${slug}/](https://caes.es/${slug}/)"
+          done <<< "$PAGES"
+          curl -s -H "Content-Type: application/json" \
+            -d "{\"embeds\":[{\"title\":\"🚀 ${COUNT} nouvelle(s) page(s) SEO publiée(s)\",\"description\":\"${LINKS}\",\"color\":5025616,\"footer\":{\"text\":\"Pipeline SEO automatique · $(date +%Y-%m-%d)\"}}]}" \
+            "REDACTED_DISCORD_WEBHOOK"

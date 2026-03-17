@@ -1,0 +1,5 @@
+{
+  "redirects": [
+    { "source": "/:path(.*)", "has": [{ "type": "host", "value": "www.murasec.fr" }], "destination": "https://murasec.fr/:path*", "permanent": true }
+  ]
+}

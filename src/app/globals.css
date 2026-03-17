@@ -1,0 +1,141 @@
+@import "tailwindcss";
+
+@theme {
+  /* Primary — MurExpert Blue (from logo) */
+  --color-primary-50: #EBF0F8;
+  --color-primary-100: #D2DEF0;
+  --color-primary-200: #A5BDE1;
+  --color-primary-300: #789CD2;
+  --color-primary-400: #2B5EA7;
+  --color-primary-500: #244F8E;
+  --color-primary-600: #1D4075;
+  --color-primary-700: #16315C;
+  --color-primary-800: #0F2243;
+  --color-primary-900: #08132A;
+  --color-primary-950: #040915;
+
+  /* CTA — MurExpert Orange (from logo house) */
+  --color-cta: #E8952D;
+  --color-cta-hover: #D4850F;
+  --color-cta-light: #FDF3E6;
+
+  /* Warm Beige tones (aligned with CAEs) */
+  --color-beige-50: #F7F4EF;
+  --color-beige-100: #F0EDE8;
+  --color-beige-200: #E8E4DC;
+  --color-beige-300: #D4C5B0;
+  --color-beige-400: #BDA888;
+  --color-beige-500: #A08B68;
+
+  /* Accent — Orange */
+  --color-accent: #E8952D;
+
+  /* Fonts */
+  --font-heading: var(--font-serif);
+  --font-body: var(--font-inter);
+  --font-display: var(--font-serif);
+}
+
+body {
+  font-family: var(--font-body), system-ui, sans-serif;
+  color: #1A1A1A;
+  background: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading), Georgia, serif;
+  font-weight: 400;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Primary CTA button */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  background: #E8952D;
+  color: #ffffff;
+  font-family: var(--font-body), system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  padding: 0.875rem 1.75rem;
+  border-radius: 9999px;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  cursor: pointer;
+}
+.btn-primary:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 24px rgba(232, 149, 45, 0.35);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  background: transparent;
+  color: #1A1A1A;
+  font-family: var(--font-body), system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  padding: 0.875rem 1.75rem;
+  border-radius: 9999px;
+  border: 1.5px solid #E0E0E0;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  cursor: pointer;
+}
+.btn-secondary:hover {
+  border-color: #1A1A1A;
+  transform: scale(1.03);
+}
+
+/* Card style */
+.card-beige {
+  background: var(--color-beige-100);
+  border-radius: 1.25rem;
+  padding: 2rem;
+  transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.card-beige:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 1rem 1rem -0.5rem rgba(0,0,0,0.08);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideInLeft {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
