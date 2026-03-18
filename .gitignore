@@ -37,6 +37,9 @@ yarn-error.log*
 # mcp config (contains API tokens)
 .mcp.json
 
+# claude code local settings (contains API tokens)
+.claude/
+
 # vercel
 .vercel
 
