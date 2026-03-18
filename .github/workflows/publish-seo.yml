@@ -43,7 +43,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add src/data/seo-pages/content/
+          git add src/data/seo-pages/content/ src/data/seo-pages/planning.json
           git commit -m "chore(seo): publish pages $(date +%Y-%m-%d)"
           git push
 
@@ -55,7 +55,7 @@ jobs:
           LINKS=""
           while IFS= read -r slug; do
             [ -z "$slug" ] && continue
-            LINKS="$LINKS\n• [/${slug}/](https://caes.es/${slug}/)"
+            LINKS="$LINKS\n• [/${slug}/](https://murexpert.fr/${slug}/)"
           done <<< "$PAGES"
           curl -s -H "Content-Type: application/json" \
             -d "{\"embeds\":[{\"title\":\"🚀 ${COUNT} nouvelle(s) page(s) SEO publiée(s)\",\"description\":\"${LINKS}\",\"color\":5025616,\"footer\":{\"text\":\"Pipeline SEO automatique · $(date +%Y-%m-%d)\"}}]}" \

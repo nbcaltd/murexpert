@@ -1,0 +1,175 @@
+{
+  "slug": "vmc",
+  "keyword": "vmc",
+  "cluster": "condensation",
+  "metadata": {
+    "title": "VMC : Ventilation Mécanique Contrôlée contre l'humidité",
+    "description": "Découvrez tout sur la VMC : types, installation, prix et solutions pour lutter contre l'humidité et la condensation dans votre logement."
+  },
+  "breadcrumbLabel": "VMC",
+  "hero": {
+    "badge": "Solution pro",
+    "h1": "VMC : La solution ventilation contre l'humidité excessive",
+    "description": "La Ventilation Mécanique Contrôlée (VMC) est un système indispensable pour renouveler l'air intérieur et évacuer l'humidité. Une VMC bien dimensionnée et entretenue protège votre logement des problèmes de condensation et améliore la qualité de l'air que vous respirez.",
+    "ctaText": "Diagnostic VMC gratuit"
+  },
+  "heroImage": {
+    "src": "/images/condensation.jpg",
+    "alt": "Condensation sur un mur — problème d'humidité"
+  },
+  "sections": [
+    {
+      "h2": "Qu'est-ce qu'une VMC ?",
+      "paragraphs": [
+        "La Ventilation Mécanique Contrôlée (VMC) est un système de ventilation qui assure le renouvellement permanent de l'air intérieur de votre habitation. Contrairement à la ventilation naturelle, la VMC utilise un ventilateur électrique pour extraire l'air vicié et humide des pièces de service (cuisine, salle de bain, toilettes) et permettre l'entrée d'air neuf dans les pièces de vie.",
+        "Ce système fonctionne selon le principe de la circulation d'air : l'air neuf entre par les bouches d'entrée situées dans les pièces principales (salon, chambres) et ressort par les bouches d'extraction dans les pièces humides. Cette circulation permanente évite la stagnation de l'humidité et des polluants intérieurs.",
+        "Une installation VMC comprend plusieurs éléments : le groupe d'extraction (ventilateur), le réseau de gaines, les bouches d'extraction et d'entrée d'air, ainsi que les accessoires de régulation. L'ensemble est conçu pour fonctionner 24h/24 avec une consommation électrique réduite."
+      ]
+    },
+    {
+      "h2": "Les différents types de VMC",
+      "intro": "Il existe plusieurs types de VMC, chacun adapté à des besoins spécifiques en matière de ventilation et de lutte contre l'humidité.",
+      "subsections": [
+        {
+          "h3": "VMC simple flux autoréglable",
+          "text": "La VMC simple flux autoréglable maintient un débit d'air constant quelles que soient les conditions extérieures (vent, pression). Les bouches d'extraction sont équipées de dispositifs mécaniques qui régulent automatiquement le passage de l'air. Ce système, économique à l'achat, convient parfaitement aux logements standards et permet un contrôle efficace de l'humidité avec une consommation électrique d'environ 40 watts."
+        },
+        {
+          "h3": "VMC simple flux hygroréglable",
+          "text": "La VMC hygroréglable ajuste automatiquement ses débits en fonction du taux d'humidité détecté dans chaque pièce. Plus sophistiquée, elle réduit la ventilation quand l'air est sec et l'augmente en présence d'humidité. Cette technologie permet des économies d'énergie substantielles (jusqu'à 15% sur le chauffage) tout en maintenant un excellent contrôle de l'humidité intérieure."
+        },
+        {
+          "h3": "VMC double flux",
+          "text": "La VMC double flux récupère la chaleur de l'air extrait pour préchauffer l'air neuf entrant grâce à un échangeur thermique. Ce système haut de gamme filtre l'air entrant et peut récupérer jusqu'à 90% des calories. Particulièrement efficace contre l'humidité, elle assure un renouvellement d'air optimal sans déperdition énergétique, idéale pour les maisons passives ou très bien isolées."
+        }
+      ]
+    },
+    {
+      "h2": "Les dangers d'une VMC défaillante",
+      "alert": "Une VMC mal entretenue ou défaillante peut aggraver les problèmes d'humidité plutôt que les résoudre.",
+      "intro": "Lorsqu'une VMC ne fonctionne pas correctement, les conséquences sur la qualité de l'air et l'humidité du logement peuvent être graves.",
+      "list": [
+        "Accumulation d'humidité et formation de condensation sur les murs et fenêtres",
+        "Développement de moisissures et champignons dans les zones mal ventilées",
+        "Dégradation de la qualité de l'air avec concentration de polluants intérieurs",
+        "Aggravation des problèmes respiratoires et allergies chez les occupants",
+        "Dommages structurels aux matériaux de construction par l'humidité persistante"
+      ]
+    },
+    {
+      "h2": "Comment bien choisir et installer sa VMC",
+      "intro": "Le choix et l'installation d'une VMC doivent être adaptés aux caractéristiques de votre logement et à vos besoins spécifiques en matière de ventilation.",
+      "subsections": [
+        {
+          "h3": "Étape 1 : Dimensionnement selon la superficie",
+          "text": "Le dimensionnement de la VMC dépend du volume de votre logement et du nombre de pièces. Pour une maison de 100m², comptez environ 105 à 120 m³/h de débit d'extraction. Chaque pièce humide nécessite un débit minimum : 75 m³/h pour une cuisine, 15 à 30 m³/h pour une salle de bain selon sa superficie, et 15 m³/h pour des toilettes séparées."
+        },
+        {
+          "h3": "Étape 2 : Choix de l'emplacement du groupe",
+          "text": "Le groupe d'extraction doit être installé dans un endroit accessible pour l'entretien, à l'abri du gel et des intempéries. Les combles non chauffés sont l'emplacement idéal, avec une évacuation directe vers l'extérieur par le toit. L'isolation phonique du groupe et des gaines est essentielle pour limiter les nuisances sonores."
+        },
+        {
+          "h3": "Étape 3 : Installation du réseau de gaines",
+          "text": "Les gaines de ventilation, généralement en PVC ou aluminium, doivent être installées avec une pente de 2% vers le groupe d'extraction pour évacuer les condensats. Leur isolation thermique est obligatoire dans les combles pour éviter la condensation interne. Les gaines souples sont plus faciles à installer mais les gaines rigides offrent de meilleures performances aérauliques."
+        }
+      ],
+      "list": [
+        "Amélioration immédiate de la qualité de l'air intérieur",
+        "Réduction significative du taux d'humidité et des risques de condensation",
+        "Économies d'énergie avec les modèles hygroréglables ou double flux",
+        "Augmentation de la durée de vie des matériaux de construction",
+        "Confort thermique amélioré et réduction des odeurs"
+      ]
+    },
+    {
+      "h2": "Prix d'installation et d'entretien d'une VMC",
+      "intro": "Le coût d'une VMC varie selon le type choisi, la complexité de l'installation et la superficie du logement à ventiler."
+    }
+  ],
+  "pricing": [
+    {
+      "item": "VMC simple flux autoréglable (fourniture + pose)",
+      "price": "800 - 1500 EUR"
+    },
+    {
+      "item": "VMC simple flux hygroréglable (fourniture + pose)",
+      "price": "1200 - 2200 EUR"
+    },
+    {
+      "item": "VMC double flux (fourniture + pose)",
+      "price": "3000 - 6000 EUR"
+    },
+    {
+      "item": "Entretien annuel VMC",
+      "price": "150 - 300 EUR"
+    },
+    {
+      "item": "Remplacement groupe d'extraction",
+      "price": "300 - 800 EUR"
+    }
+  ],
+  "faq": [
+    {
+      "question": "Quelle VMC choisir contre l'humidité ?",
+      "answer": "Pour lutter efficacement contre l'humidité, la VMC hygroréglable est le meilleur choix car elle adapte automatiquement son débit au taux d'humidité détecté. Dans les logements très humides ou mal isolés, une VMC double flux peut être recommandée pour sa capacité de traitement d'air supérieure et son efficacité énergétique."
+    },
+    {
+      "question": "À quelle fréquence entretenir sa VMC ?",
+      "answer": "L'entretien d'une VMC doit être réalisé tous les 6 mois minimum. Nettoyez les bouches d'extraction et d'entrée d'air, dépoussiérez le groupe d'extraction et vérifiez l'état des gaines. Un entretien professionnel annuel est recommandé pour contrôler les débits et l'étanchéité du système."
+    },
+    {
+      "question": "Ma VMC est-elle suffisante si j'ai encore de la condensation ?",
+      "answer": "Si vous observez encore de la condensation malgré une VMC en fonctionnement, plusieurs causes sont possibles : débit insuffisant, bouches d'extraction obstruées, défaut d'étanchéité du réseau, ou entrées d'air bloquées. Un diagnostic par un professionnel permettra d'identifier le dysfonctionnement et d'ajuster le système."
+    },
+    {
+      "question": "Peut-on installer une VMC dans un logement ancien ?",
+      "answer": "Oui, l'installation d'une VMC dans un logement ancien est possible mais nécessite parfois des adaptations. Il faut créer des entrées d'air dans les pièces de vie, percer les cloisons pour passer les gaines et s'assurer d'un accès aux combles. La VMC rénovation, avec des gaines de plus petit diamètre, facilite l'installation en réhabilitation."
+    },
+    {
+      "question": "Combien consomme une VMC en électricité ?",
+      "answer": "La consommation électrique d'une VMC varie selon le type : une VMC simple flux consomme entre 15 et 45 watts en continu, soit environ 130 à 390 kWh par an. Une VMC double flux consomme davantage (100 à 200 watts) mais permet des économies de chauffage qui compensent largement cette consommation supplémentaire."
+    }
+  ],
+  "howTo": {
+    "title": "Comment installer une VMC efficace",
+    "steps": [
+      {
+        "name": "Diagnostic et dimensionnement",
+        "text": "Évaluez les besoins de ventilation selon la superficie, le nombre d'occupants et l'humidité présente. Calculez les débits nécessaires pour chaque pièce et choisissez le type de VMC adapté."
+      },
+      {
+        "name": "Préparation de l'installation",
+        "text": "Définissez l'emplacement du groupe d'extraction, tracez le parcours des gaines et préparez les percements nécessaires dans les cloisons et la toiture pour l'évacuation."
+      },
+      {
+        "name": "Installation du système",
+        "text": "Fixez le groupe d'extraction, installez le réseau de gaines isolées avec les bonnes pentes, posez les bouches d'extraction et créez les entrées d'air dans les pièces de vie."
+      },
+      {
+        "name": "Mise en service et réglage",
+        "text": "Raccordez électriquement le système, effectuez les réglages de débit selon les préconisations du fabricant et vérifiez le bon fonctionnement de l'ensemble par des mesures de débit."
+      }
+    ],
+    "totalTime": "P3D"
+  },
+  "relatedLinks": [
+    {
+      "title": "Traitement humidité",
+      "href": "/traitement-humidite/"
+    },
+    {
+      "title": "Diagnostic humidité",
+      "href": "/diagnostic-humidite/"
+    },
+    {
+      "title": "Humidité maison",
+      "href": "/humidite-maison/"
+    },
+    {
+      "title": "Diagnostic gratuit",
+      "href": "/diagnostic-gratuit/"
+    }
+  ],
+  "datePublished": "2026-03-18",
+  "dateModified": "2026-03-18"
+}
